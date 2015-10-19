@@ -1,6 +1,6 @@
 #compdef gttrans
 
 _arguments \
-    '(-s --set)'{-s,--set}'[set the transparency]:percentage' \
-    '(-g --get)'{-g,--get}'[show the current transparency]' \
-    '(-h --help)'{-h,--help}'[show this help message]'
+    '(- *)'{-s,--set}'[set the transparency]:percentage' \
+    '(- *)'{-g,--get}'[show the current transparency]' \
+    '(- *)'{-h,--help}'[show this help message]'
