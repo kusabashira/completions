@@ -1,0 +1,11 @@
+#compdef alita
+
+_arguments \
+    '(-d --delimiter)'{-d,--delimiter}'[delimit line by DELIM]:delimiter' \
+    '(-r --regexp)'{-r,--regexp}'[DELIM is a regular expression]' \
+    '(-c --count)'{-c,--count}'[delimit line COUNT times]:count' \
+    '(-m --margin)'{-m,--margin}'[join cells by FORMAT]:margin' \
+    '(-j --justify)'{-j,--justify}'[justify cells by SEQUENCE]:justify' \
+    '(- *)'{-h,--help}'[show this help message]' \
+    '(- *)--version[print the version]' \
+    '*:input files:_files'
