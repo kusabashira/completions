@@ -1,7 +1,7 @@
-completions
-===========
+auto-completions
+================
 
-Autocompletions for my tools.
+My auto-completions.
 
 License
 -------
