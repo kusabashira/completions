@@ -1,0 +1,5 @@
+complete -c vub -s f -l filetype -d 'installing under the ftbundle/TYPE'
+complete -c vub -s l -l list -d 'change the behavior to list packages'
+complete -c vub -s r -l remove -d 'change the behavior to remove'
+complete -c vub -s u -l update -d 'change the behavior to clean update'
+complete -c vub -s h -l help -d 'show this help message'
