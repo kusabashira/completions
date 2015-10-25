@@ -1,0 +1,9 @@
+#compdef csvp
+
+_arguments \
+    '(-i --indexes)'{-i,--indexes}'[select only these indexes]:indexes' \
+    '(-h --headers)'{-h,--headers}'[select only these headers]:headers' \
+    '(-d --delimiter)'{-d,--delimiter}'[use STRING as the output delimiter (default: \t)]:delimiter' \
+    '(- *)'{-h,--help}'[display this help text and exit]' \
+    '(- *)'{-v,--version}'[display version information and exit]' \
+    '*:input files:_files'
