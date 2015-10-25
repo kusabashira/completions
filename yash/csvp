@@ -1,0 +1,21 @@
+function completion/csvp {
+	typeset OPTIONS ARGOPT PREFIX
+	OPTIONS=(
+	'-i: --indexes:; select only these indexes'
+	'-h: --headers:; select only these headers'
+	'-d: --delimiter:; use STRING as the output delimiter (default: \t)'
+	'--help; display this help text and exit'
+	'--version; display version information and exit'
+	)
+	command -f completion//parseoptions -es
+	case $ARGOPT in
+	(-)
+		command -f completion//completeoptions
+		;;
+	(*)
+		complete -f
+		;;
+	esac
+}
+
+# vim: set ft=sh ts=8 sts=8 sw=8 noet:
