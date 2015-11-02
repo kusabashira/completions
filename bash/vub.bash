@@ -7,6 +7,7 @@ _vub()
     --remove
     --update
     --help
+    --version
   "
   case "$cur" in
     -*)
