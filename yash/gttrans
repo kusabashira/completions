@@ -1,9 +1,9 @@
 function completion/gttrans {
 	typeset OPTIONS ARGOPT PREFIX
 	OPTIONS=(
-	'-h --help; show this help message'
-	'-g --get; show the current transparency'
-	'-s --set; set the transparency'
+	"-h --help; show this help message"
+	"-g --get; show the current transparency"
+	"-s --set; set the transparency"
 	)
 	command -f completion//parseoptions -es
 	case $ARGOPT in
