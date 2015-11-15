@@ -1,11 +1,11 @@
 function completion/csvp {
 	typeset OPTIONS ARGOPT PREFIX
 	OPTIONS=(
-	'-i: --indexes:; select only these indexes'
-	'-h: --headers:; select only these headers'
-	'-t --tsv; equivalent to -d'"'"'\t'"'"''
-	'-d: --delimiter:; use DELIM instead of comma for field delimiter'
-	'-D: --output-delimiter:; use STRING as the output delimiter (default: \t)'
+	'i: --indexes:; select only these indexes'
+	'h: --headers:; select only these headers'
+	't --tsv; equivalent to -d'"'"'\t'"'"''
+	'd: --delimiter:; use DELIM instead of comma for field delimiter'
+	'D: --output-delimiter:; use STRING as the output delimiter (default: \t)'
 	'--help; display this help text and exit'
 	'--version; output version information and exit'
 	)

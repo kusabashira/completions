@@ -1,12 +1,12 @@
 function completion/alita {
 	typeset OPTIONS ARGOPT PREFIX
 	OPTIONS=(
-	'-d: --delimiter:; delimit line by DELIM'
-	'-r --regexp; DELIM is a regular expression'
-	'-c: --count:; delimit line COUNT times'
-	'-m: --margin:; join cells by FORMAT'
-	'-j: --justify:; justify cells by SEQUENCE'
-	'-h --help; show this help message'
+	'd: --delimiter:; delimit line by DELIM'
+	'r --regexp; DELIM is a regular expression'
+	'c: --count:; delimit line COUNT times'
+	'm: --margin:; join cells by FORMAT'
+	'j: --justify:; justify cells by SEQUENCE'
+	'h --help; show this help message'
 	'--version; print the version'
 	)
 	command -f completion//parseoptions -es

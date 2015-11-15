@@ -1,11 +1,11 @@
 function completion/ltsvp {
 	typeset OPTIONS ARGOPT PREFIX
 	OPTIONS=(
-	'-k: --keys:; select only these keys (required)'
-	'-d: --delimiter:; use STRING to separate parts (default: \t)'
-	'-r --remain-ltsv; print selected parts as LTSV'
-	'-h --help; display this help text and exit'
-	'-v --version; display version information and exit'
+	'k: --keys:; select only these keys (required)'
+	'd: --delimiter:; use STRING to separate parts (default: \t)'
+	'r --remain-ltsv; print selected parts as LTSV'
+	'h --help; display this help text and exit'
+	'v --version; display version information and exit'
 	)
 	command -f completion//parseoptions -es
 	case $ARGOPT in
