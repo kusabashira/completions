@@ -4,7 +4,9 @@ _csvp()
   local opts="
     --indexes=
     --headers=
+    --tsv
     --delimiter=
+    --output-delimiter=
     --help
     --version
   "

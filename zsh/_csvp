@@ -3,7 +3,9 @@
 _arguments \
     '(-i --indexes)'{-i,--indexes}'[select only these indexes]:indexes' \
     '(-h --headers)'{-h,--headers}'[select only these headers]:headers' \
-    '(-d --delimiter)'{-d,--delimiter}'[use STRING as the output delimiter (default: \t)]:delimiter' \
-    '(- *)'{-h,--help}'[display this help text and exit]' \
-    '(- *)'{-v,--version}'[display version information and exit]' \
+    '(-t --tsv)'{-t,--tsv}'[equivalent to -d'"'"'\\t'"'"']' \
+    '(-d --delimiter)'{-d,--delimiter}'[use DELIM instead of comma for field delimiter]' \
+    '(-D --output-delimiter)'{-D,--output-delimiter}'[use STRING as the output delimiter (default: \\t)]' \
+    '(- *)--help[display this help text and exit]' \
+    '(- *)--version[output version information and exit]' \
     '*:input files:_files'
