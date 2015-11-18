@@ -3,7 +3,7 @@ _ltsvp()
   local cur="${COMP_WORDS[COMP_CWORD]}"
   local opts="
     --keys=
-    --delimiter=
+    --output-delimiter=
     --remain-ltsv
     --help
     --version

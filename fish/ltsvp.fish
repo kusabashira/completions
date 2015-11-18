@@ -1,5 +1,5 @@
 complete -c ltsvp -s k -l keys -d 'select only these keys (required)'
-complete -c ltsvp -s d -l delimiter -d 'use STRING to separate parts (default: \t)'
+complete -c ltsvp -s D -l output-delimiter -d 'use STRING to separate parts (default: \t)'
 complete -c ltsvp -s r -l remain-ltsv -d 'print selected parts as LTSV'
 complete -c ltsvp -s h -l help -d 'display this help text and exit'
 complete -c ltsvp -s v -l version -d 'display version information and exit'
