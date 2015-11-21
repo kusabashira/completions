@@ -1,0 +1,21 @@
+function completion/vil {
+	typeset OPTIONS ARGOPT PREFIX
+	OPTIONS=(
+	"n --quiet --silent; suppress automatic printing of buffer"
+	"e: --expression:; add the script to the commands to be executed"
+	"f: --file:; add the contents of script-file to the commands to be executed"
+	"--help; display this help text and exit"
+	"--version; output version information and exit"
+	)
+	command -f completion//parseoptions -es
+	case $ARGOPT in
+	(-)
+		command -f completion//completeoptions
+		;;
+	(*)
+		complete -f
+		;;
+	esac
+}
+
+# vim: set ft=sh ts=8 sts=8 sw=8 noet:

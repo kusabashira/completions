@@ -1,0 +1,5 @@
+complete -c vil -s n -l quiet -l silent -d 'suppress automatic printing of buffer'
+complete -c vil -s e -l expression -d 'add the script to the commands to be executed'
+complete -c vil -s f -l file -d 'add the contents of script-file to the commands to be executed'
+complete -c vil -l help -d 'display this help and exit'
+complete -c vil -l version -d 'output version information and exit'
