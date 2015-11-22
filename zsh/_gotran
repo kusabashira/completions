@@ -1,0 +1,9 @@
+#compdef gotran
+
+_arguments \
+    '(-e --expr *)'{-e,--expr}'[translate TEXT]:text' \
+    '(- *)'{-h,--help}'[show this help message]' \
+    '(- *)'{-v,--version}'[print the version]' \
+    '1: :_guard "^--*" "source language"' \
+    '2: :_guard "^--*" "destination language"' \
+    '*:input files:_files'
