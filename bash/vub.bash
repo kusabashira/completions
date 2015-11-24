@@ -39,6 +39,9 @@ _vub()
       -f=*|--filetype=*)
         filetype="${words[i]#*=}"
         ;;
+      --help|--version)
+        return
+        ;;
     esac
   done
 
