@@ -1,0 +1,6 @@
+#compdef pde
+
+_arguments \
+    '(- 1)--help[display this help text and exit]' \
+    '(- 1)--version[output version information and exit]' \
+    '1: :_guard "^--*" "source file"'
