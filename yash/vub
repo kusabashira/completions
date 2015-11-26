@@ -1,0 +1,22 @@
+function completion/vub {
+	typeset OPTIONS ARGOPT PREFIX
+	OPTIONS=(
+	"f: --filetype:; installing under the ftbundle/TYPE"
+	"l --list; change the behavior to list packages"
+	"r --remove; change the behavior to remove "
+	"u --update; change the behavior to clean update"
+	"--help; show this help message"
+	"--version; output version information"
+	)
+	command -f completion//parseoptions -es
+	case $ARGOPT in
+	(-)
+		command -f completion//completeoptions
+		;;
+	(*)
+		complete -f
+		;;
+	esac
+}
+
+# vim: set ft=sh ts=8 sts=8 sw=8 noet:
