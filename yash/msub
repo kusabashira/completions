@@ -1,0 +1,18 @@
+function completion/msub {
+	typeset OPTIONS ARGOPT PREFIX
+	OPTIONS=(
+	"b --boundary; use word boundary in matcher"
+	"h --help; show this help message"
+	)
+	command -f completion//parseoptions -es
+	case $ARGOPT in
+	(-)
+		command -f completion//completeoptions
+		;;
+	(*)
+		complete -f
+		;;
+	esac
+}
+
+# vim: set ft=sh ts=8 sts=8 sw=8 noet:
