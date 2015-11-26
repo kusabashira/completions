@@ -42,6 +42,9 @@ _vub()
       --help|--version)
         return
         ;;
+      --)
+        break
+        ;;
     esac
   done
 
