@@ -2,8 +2,8 @@
 
 _arguments \
     '(-n --quiet --silent)'{-n,--quiet,--silent}'[suppress automatic printing of buffer]' \
-    '(1)*'{-e,--expression}'[add the script to the commands to be executed]:script' \
-    '(1)*'{-f,--file}'[add the contents of script-file to the commands to be executed]:script-file:_files' \
+    '(1)*'{-e,--expression=}'[add the script to the commands to be executed]:script' \
+    '(1)*'{-f,--file=}'[add the contents of script-file to the commands to be executed]:script-file:_files' \
     '(- 1 *)'--help'[display this help text and exit]' \
     '(- 1 *)'--version'[output version information and exit]' \
     '1: :_guard "^--*" "vim script"' \

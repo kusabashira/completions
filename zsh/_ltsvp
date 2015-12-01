@@ -1,8 +1,8 @@
 #compdef ltsvp
 
 _arguments \
-    '(-k --keys)'{-k,--keys}'[select only these keys (required)]:keys' \
-    '(-D --output-delimiter)'{-D,--output-delimiter}'[use STRING to separate parts (default: \t)]:output delimiter' \
+    '(-k --keys)'{-k,--keys=}'[select only these keys (required)]:keys' \
+    '(-D --output-delimiter)'{-D,--output-delimiter=}'[use STRING to separate parts (default: \t)]:output delimiter' \
     '(-r --remain-ltsv)'{-r,--remain-ltsv}'[print selected parts as LTSV]' \
     '(- *)'{-h,--help}'[display this help text and exit]' \
     '(- *)'{-v,--version}'[display version information and exit]' \

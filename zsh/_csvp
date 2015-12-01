@@ -1,11 +1,11 @@
 #compdef csvp
 
 _arguments \
-    '(-i -h --indexes --headers)'{-i,--indexes}'[select only these indexes]:indexes' \
-    '(-i -h --indexes --headers)'{-h,--headers}'[select only these headers]:headers' \
+    '(-i -h --indexes --headers)'{-i,--indexes=}'[select only these indexes]:indexes' \
+    '(-i -h --indexes --headers)'{-h,--headers=}'[select only these headers]:headers' \
     '(-t --tsv)'{-t,--tsv}'[equivalent to -d'"'"'\\t'"'"']' \
-    '(-d --delimiter)'{-d,--delimiter}'[use DELIM instead of comma for field delimiter]:delimiter' \
-    '(-D --output-delimiter)'{-D,--output-delimiter}'[use STRING as the output delimiter (default: \\t)]:output delimiter' \
+    '(-d --delimiter)'{-d,--delimiter=}'[use DELIM instead of comma for field delimiter]:delimiter' \
+    '(-D --output-delimiter)'{-D,--output-delimiter=}'[use STRING as the output delimiter (default: \\t)]:output delimiter' \
     '(- *)--help[display this help text and exit]' \
     '(- *)--version[output version information and exit]' \
     '*:input files:_files'

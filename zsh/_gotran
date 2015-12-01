@@ -1,7 +1,7 @@
 #compdef gotran
 
 _arguments \
-    '(-e --expr *)'{-e,--expr}'[translate TEXT]:text' \
+    '(-e --expr *)'{-e,--expr=}'[translate TEXT]:text' \
     '(- 1 2 *)'{-h,--help}'[show this help message]' \
     '(- 1 2 *)'{-v,--version}'[print the version]' \
     '1: :_guard "^--*" "source language"' \
