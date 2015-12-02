@@ -1,0 +1,7 @@
+#compdef rl
+
+_arguments
+    '(-d --delimiter)'{-d,--delimiter=}'[delimit line by DELIM]:delimiter' \
+    '(- *)'--help'[display this help text and exit]' \
+    '(- *)'--version'[output version information and exit]' \
+    '*:input files:_files'
