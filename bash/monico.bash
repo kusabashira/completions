@@ -4,6 +4,7 @@ _monico()
   _init_completion -n = || return
 
   local opts="
+    --buffer-output
     --no-clear
     --directory
     --help
@@ -14,10 +15,10 @@ _monico()
   local target=self
   for ((i=1; i < $cword; i++)); do
     case "${words[i]}" in
-      -C|--no-clear|-d*|--directory=*)
+      -b|--buffer-output|-C|--no-clear|-d*|--directory=*)
         ;;
-      -C*)
-        words[i]="-${words[i]#-C}"
+      -b*|-C*)
+        words[i]="-${words[i]:2}"
         ((i--))
         ;;
       -d|--directory)
