@@ -1,6 +1,8 @@
 _vil()
 {
-  local cur="${COMP_WORDS[COMP_CWORD]}"
+  local cur prev words cword
+  _init_completion -n = || return
+
   local opts="
     --quiet
     --silent
@@ -10,6 +12,12 @@ _vil()
     --version
   "
   case "$cur" in
+    --expression=*)
+      ;;
+    --file=*)
+      cur="${cur#--file=}"
+      _filedir
+      ;;
     -*)
       COMPREPLY=( $(compgen -W "$opts" -- "$cur") )
       ;;
