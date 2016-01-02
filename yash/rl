@@ -2,8 +2,8 @@ function completion/rl {
 	typeset OPTIONS ARGOPT PREFIX
 	OPTIONS=(
 	"d: --delimiter:; delimit line by DELIM"
-	"help; display this help text and exit"
-	"version; output version information and exit"
+	"h --help; display this help text and exit"
+	"h --version; output version information and exit"
 	)
 	command -f completion//parseoptions -es
 	case $ARGOPT in
