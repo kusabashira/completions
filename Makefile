@@ -1,16 +1,16 @@
 .PHONY: all generate-source generate-completions
 all:
 
-NAME=
+name=
 generate-source:
-	test -n '$(NAME)'
-	scripts/parse_usage '$(NAME)' > 'src/$(NAME).yaml'
+	test -n '$(name)'
+	scripts/parse_usage '$(name)' > 'src/$(name).yaml'
 
-NAME=
+name=
 generate-completions:
-	test -n '$(NAME)'
-	test -f 'src/$(NAME).yaml'
-	acgen -t bash 'src/$(NAME).yaml' > 'bash/$(NAME).bash'
-	acgen -t zsh  'src/$(NAME).yaml' > 'zsh/_$(NAME)'
-	acgen -t fish 'src/$(NAME).yaml' > 'fish/$(NAME).fish'
-	acgen -t yash 'src/$(NAME).yaml' > 'yash/$(NAME)'
+	test -n '$(name)'
+	test -f 'src/$(name).yaml'
+	acgen -t bash 'src/$(name).yaml' > 'bash/$(name).bash'
+	acgen -t zsh  'src/$(name).yaml' > 'zsh/_$(name)'
+	acgen -t fish 'src/$(name).yaml' > 'fish/$(name).fish'
+	acgen -t yash 'src/$(name).yaml' > 'yash/$(name)'
