@@ -8,6 +8,7 @@ generate-source:
 
 NAME=
 generate-completions:
+	test -n '$(NAME)'
 	test -f 'src/$(NAME).yaml'
 	acgen -t bash 'src/$(NAME).yaml' > 'bash/$(NAME).bash'
 	acgen -t zsh  'src/$(NAME).yaml' > 'zsh/_$(NAME)'
