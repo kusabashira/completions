@@ -4,13 +4,13 @@ all:
 name=
 generate-source:
 	test -n '$(name)'
-	scripts/parse_usage '$(name)' > 'src/$(name).yaml'
+	scripts/parse_usage '$(name)' > 'sources/$(name).yaml'
 
 name=
 generate-completions:
 	test -n '$(name)'
-	test -f 'src/$(name).yaml'
-	acgen -t bash 'src/$(name).yaml' > 'completions/bash/$(name).bash'
-	acgen -t zsh  'src/$(name).yaml' > 'completions/zsh/_$(name)'
-	acgen -t fish 'src/$(name).yaml' > 'completions/fish/$(name).fish'
-	acgen -t yash 'src/$(name).yaml' > 'completions/yash/$(name)'
+	test -f 'sources/$(name).yaml'
+	acgen -t bash 'sources/$(name).yaml' > 'completions/bash/$(name).bash'
+	acgen -t zsh  'sources/$(name).yaml' > 'completions/zsh/_$(name)'
+	acgen -t fish 'sources/$(name).yaml' > 'completions/fish/$(name).fish'
+	acgen -t yash 'sources/$(name).yaml' > 'completions/yash/$(name)'
