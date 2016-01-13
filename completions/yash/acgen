@@ -1,0 +1,18 @@
+function completion/acgen {
+	typeset OPTIONS ARGOPT PREFIX
+	OPTIONS=(
+	't: --type:; output auto-completion for specified TYPE'
+	'h --help; display this help text and exit'
+	'v --version; output version information and exit'
+	)
+	command -f completion//parseoptions -es
+	case $ARGOPT in
+	(-)
+		command -f completion//completeoptions
+		;;
+	(*)
+		complete -f
+		;;
+	esac
+}
+# vim: set ft=sh ts=8 sts=8 sw=8 noet:

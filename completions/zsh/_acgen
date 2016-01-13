@@ -1,0 +1,6 @@
+#compdef acgen
+_arguments \
+    '(-t --type)'{'-t','--type'}'[output auto-completion for specified TYPE]:TYPE' \
+    '(-h --help)'{'-h','--help'}'[display this help text and exit]' \
+    '(-v --version)'{'-v','--version'}'[output version information and exit]' \
+    '*:input files:_files'
