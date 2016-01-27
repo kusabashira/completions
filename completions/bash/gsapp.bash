@@ -7,6 +7,7 @@ _gsapp()
     delete
     list
     help
+    version
   '
   case "$COMP_CWORD" in
     1)
@@ -14,9 +15,18 @@ _gsapp()
       ;;
     *)
       case "$operation" in
+        add)
+          case "$COMP_CWORD" in
+            2) _filedir ;;
+            *) _command_offset 3 ;;
+          esac
+          ;;
         delete)
           local applications="$(gsapp list 2> /dev/null)"
           COMPREPLY=( $(compgen -W "$applications" -- "$cur") )
+          ;;
+        list|help|version)
+          COMPREPLY=()
           ;;
         *)
           _filedir
