@@ -29,9 +29,10 @@ sub parse_usage {
       arg         => '',
       description => '',
     };
-    while (/-(\w)(?=[ ,]|$)/gc) {
+    while (/-(\w)(?=[ ,\[]|$)/gc) {
       push @{$flag->{short}}, $1;
       $flag->{arg} = $1 if /\G[ =]([\w-]+)/gc;
+      $flag->{arg} = $1 if /\G\[([\w-]+)\]/gc;
     }
     while (/--([\w-]+)(?=[= ,]|$)?/gc) {
       push @{$flag->{long}}, $1;
