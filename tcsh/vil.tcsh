@@ -1,1 +1,1 @@
-complete vil 'c/--/(local opts" quiet silent expression file help version)/'
+complete vil 'c/--/(quiet silent expression file help version)/'

@@ -1,1 +1,1 @@
-complete csvp 'c/--/(indexes headers tsv delimiter outputdelimiter help version)/'
+complete csvp 'c/--/(indexes headers tsv delimiter output-delimiter help version)/'
