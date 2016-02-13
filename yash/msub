@@ -3,6 +3,7 @@ function completion/msub {
 	OPTIONS=(
 	"b --boundary; use word boundary in matcher"
 	"h --help; show this help message"
+	"v --version; output version information"
 	)
 	command -f completion//parseoptions -es
 	case $ARGOPT in

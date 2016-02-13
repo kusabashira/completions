@@ -4,6 +4,7 @@ _msub()
   local opts="
     --boundary
     --help
+    --version
   "
   case "$cur" in
     -*)

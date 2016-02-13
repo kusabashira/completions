@@ -1,1 +1,1 @@
-complete msub 'c/--/(boundary help)/'
+complete msub 'c/--/(boundary help version)/'
