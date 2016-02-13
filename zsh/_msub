@@ -1,0 +1,9 @@
+#compdef msub
+
+_arguments \
+    '(-b --boundary *)'{-b,--boundary}'[use word boundary in matcher]' \
+    '(- 1 2 *)'{-h,--help}'[show this help message]' \
+    '(- 1 2 *)'{-v,--version}'[output version information]' \
+    '1: :_guard "^--*" "source pattern"' \
+    '2: :_guard "^--*" "destination pattern"' \
+    '*:input files:_files'
