@@ -4,4 +4,4 @@ _arguments \
     '(-s --serial)'{'-s','--serial'}'[unpaste one file at a time instead of in parallel]' \
     '(--help)''--help''[display this help and exit]' \
     '(--version)''--version''[display version information and exit]' \
-    '*:input files:_files'
+    '*:output files:_files'
