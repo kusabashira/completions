@@ -1,0 +1,17 @@
+function completion/prod {
+	typeset OPTIONS ARGOPT PREFIX
+	OPTIONS=(
+	's: --separator:; use STRING to separate columns (default: \t)'
+	'--help; display this help text and exit'
+	'--version; display version information and exit'
+	)
+	command -f completion//parseoptions -es
+	case $ARGOPT in
+	(-)
+		command -f completion//completeoptions
+		;;
+	(*)
+		complete -f
+		;;
+	esac
+}

@@ -1,0 +1,6 @@
+#compdef prod
+_arguments \
+    '(-s --separator)'{'-s','--separator'}'[use STRING to separate columns (default: \t)]:STRING' \
+    '(--help)''--help''[display this help text and exit]' \
+    '(--version)''--version''[display version information and exit]' \
+    '*:input files:_files'
