@@ -1,12 +1,12 @@
 _prod()
 {
-  local cur="${COMP_WORDS[COMP_CWORD]}"
+  local cur=${COMP_WORDS[COMP_CWORD]}
   local opts='
     --separator=
     --help
     --version
   '
-  case "$cur" in
+  case $cur in
     -*)
       COMPREPLY=( $(compgen -W "$opts" -- "$cur") )
       ;;

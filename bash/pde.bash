@@ -1,11 +1,11 @@
 _pde()
 {
-  local cur="${COMP_WORDS[COMP_CWORD]}"
-  local opts="
+  local cur=${COMP_WORDS[COMP_CWORD]}
+  local opts='
     --help
     --version
-  "
-  case "$cur" in
+  '
+  case $cur in
     -*)
       COMPREPLY=( $(compgen -W "$opts" -- "$cur") )
       ;;
