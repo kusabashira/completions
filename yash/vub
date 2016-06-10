@@ -1,12 +1,12 @@
 function completion/vub {
 	typeset OPTIONS ARGOPT PREFIX
 	OPTIONS=(
-	"f: --filetype:; installing under the ftbundle/TYPE"
-	"l --list; change the behavior to list packages"
-	"r --remove; change the behavior to remove "
-	"u --update; change the behavior to clean update"
-	"--help; show this help message"
-	"--version; output version information"
+	'f: --filetype:; installing under the ftbundle/TYPE'
+	'l --list; change the behavior to list packages'
+	'r --remove; change the behavior to remove'
+	'u --update; change the behavior to update'
+	'--help; show this help message and exit'
+	'--version; output version information and exit'
 	)
 	command -f completion//parseoptions -es
 	case $ARGOPT in

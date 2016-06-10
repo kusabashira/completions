@@ -1,9 +1,9 @@
 function completion/msub {
 	typeset OPTIONS ARGOPT PREFIX
 	OPTIONS=(
-	"b --boundary; use word boundary in matcher"
-	"h --help; show this help message"
-	"v --version; output version information"
+	'b --boundary; use word boundary in matcher'
+	'h --help; show this help message and exit'
+	'v --version; output version information and exit'
 	)
 	command -f completion//parseoptions -es
 	case $ARGOPT in
