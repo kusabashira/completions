@@ -1,0 +1,10 @@
+#compdef gr
+_arguments \
+    '(-n --near)'{'-n','--near'}'[find numbers near N]:N' \
+    '(-o --of)'{'-o','--of'}'[find numbers of N]:N' \
+    '(-r --range)'{'-r','--range'}'[find numbers between N and M]:N-M' \
+    '(-f --first)'{'-f','--first'}'[set first golden number for N (default: 3.0)]:N' \
+    '(-d --decimal)'{'-d','--decimal'}'[show number as a decimal]' \
+    '(--help)''--help''[display this help and exit]' \
+    '(--version)''--version''[display version information and exit]' \
+    '*:input files:_files'

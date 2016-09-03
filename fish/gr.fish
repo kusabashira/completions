@@ -1,0 +1,7 @@
+complete -c 'gr' -s 'n' -l 'near' -d 'find numbers near N'
+complete -c 'gr' -s 'o' -l 'of' -d 'find numbers of N'
+complete -c 'gr' -s 'r' -l 'range' -d 'find numbers between N and M'
+complete -c 'gr' -s 'f' -l 'first' -d 'set first golden number for N (default: 3.0)'
+complete -c 'gr' -s 'd' -l 'decimal' -d 'show number as a decimal'
+complete -c 'gr' -l 'help' -d 'display this help and exit'
+complete -c 'gr' -l 'version' -d 'display version information and exit'

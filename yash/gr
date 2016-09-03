@@ -1,0 +1,21 @@
+function completion/gr {
+	typeset OPTIONS ARGOPT PREFIX
+	OPTIONS=(
+	'n: --near:; find numbers near N'
+	'o: --of:; find numbers of N'
+	'r: --range:; find numbers between N and M'
+	'f: --first:; set first golden number for N (default: 3.0)'
+	'd --decimal; show number as a decimal'
+	'--help; display this help and exit'
+	'--version; display version information and exit'
+	)
+	command -f completion//parseoptions -es
+	case $ARGOPT in
+	(-)
+		command -f completion//completeoptions
+		;;
+	(*)
+		complete -f
+		;;
+	esac
+}
