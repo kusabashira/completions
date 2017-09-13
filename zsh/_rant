@@ -1,0 +1,8 @@
+#compdef rant
+_arguments \
+    '(-e --expression)'{'-e','--expression'}'[the regex to generate a text (default: '"'"'\w{8}'"'"')]:regex' \
+    '(-c --count)'{'-c','--count'}'[print random texts n times (default: 1)]:n' \
+    '(-s --separator)'{'-s','--separator'}'[print sep between each text (default: '"'"'\n'"'"')]:sep' \
+    '(--help)''--help''[display this help and exit]' \
+    '(--version)''--version''[display version information and exit]' \
+    '*:input files:_files'
